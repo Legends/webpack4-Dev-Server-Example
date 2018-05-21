@@ -11,3 +11,5 @@ yarn install
 ```
 yarn dev
 ```
+
+Open browser: http://localhost:3000/
