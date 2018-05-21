@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    link(rel='stylesheet', href='style.css')
+    
+  body
+    h1 Pug - node template engine
+    #container.col
+      if youAreUsingPug
+        p You are amazing
+      else
+        p Get on it!
+      p(data-show).
+        Show Item <-- Click me
+      p(data-hide).
+        Hide Item <-- Click me
+      p(data-clickable).
+        Hide Item <-- Click me
+    script(type='text/javascript', src='main.js')
+    //- script( src='#{<%= htmlWebpackPlugin.files.chunks.main.entry %>}' )
